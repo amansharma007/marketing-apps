@@ -28,7 +28,7 @@
     },
     "4": {
         "inputs": {
-            "ckpt_name": "juggernautXL_juggXIByRundiffusion.safetensors"
+            "ckpt_name": "v1-5-pruned-emaonly.ckpt"
         },
         "class_type": "CheckpointLoaderSimple"
     },
@@ -52,7 +52,7 @@
     },
     "7": {
         "inputs": {
-            "text": "text, watermark",
+            "text": "text, watermark, nsfw",
             "clip": [
                 "4",
                 1
