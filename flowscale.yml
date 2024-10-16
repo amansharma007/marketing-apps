@@ -3,29 +3,5 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows:
-  - id: rwdllgq8gu
-    name: post_generator_api.json
-    file: linkedin/post_generator_api.json
-    version: 0
-    description: ''
-    inputs: []
-    outputs: []
-    skip_preprocess: true
-  - id: umt9hbnjg5
-    name: post_gen_api.json
-    file: linkedin/post_gen_api.json
-    version: 0
-    description: ''
-    inputs: []
-    outputs: []
-    skip_preprocess: true
-normal_workflows:
-  - id: zjdkp0fyz7g
-    name: post_generator.json
-    file: linkedin/post_generator.json
-    version: 0
-  - id: 56f1094zdxo
-    name: post_gen.json
-    file: linkedin/post_gen.json
-    version: 0
+workflows: []
+normal_workflows: []
