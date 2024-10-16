@@ -12,8 +12,20 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: umt9hbnjg5
+    name: post_gen_api.json
+    file: linkedin/post_gen_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: zjdkp0fyz7g
     name: post_generator.json
     file: linkedin/post_generator.json
+    version: 0
+  - id: 56f1094zdxo
+    name: post_gen.json
+    file: linkedin/post_gen.json
     version: 0
