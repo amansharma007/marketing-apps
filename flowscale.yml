@@ -7,7 +7,7 @@ workflows:
   - id: s117jl58iza
     name: basic_workflow_api.json
     file: basic/basic_workflow_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
@@ -16,4 +16,4 @@ normal_workflows:
   - id: fx69911958l
     name: basic_workflow.json
     file: basic/basic_workflow.json
-    version: 0
+    version: 1
