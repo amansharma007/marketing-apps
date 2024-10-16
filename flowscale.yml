@@ -15,7 +15,7 @@ workflows:
   - id: 1q59lmusxw8
     name: linkedin_post_generator_api.json
     file: linkedin/linkedin_post_generator_api.json
-    version: 1
+    version: 2
     description: ''
     inputs: []
     outputs: []
@@ -28,4 +28,4 @@ normal_workflows:
   - id: hbviqeur0f9
     name: linkedin_post_generator.json
     file: linkedin/linkedin_post_generator.json
-    version: 1
+    version: 2
