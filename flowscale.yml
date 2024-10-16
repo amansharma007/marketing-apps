@@ -7,7 +7,7 @@ workflows:
   - id: s117jl58iza
     name: basic_workflow_api.json
     file: basic/basic_workflow_api.json
-    version: 1
+    version: 2
     description: ''
     inputs:
       - path: 9.inputs.filename_prefix
@@ -32,4 +32,4 @@ normal_workflows:
   - id: fx69911958l
     name: basic_workflow.json
     file: basic/basic_workflow.json
-    version: 1
+    version: 2
