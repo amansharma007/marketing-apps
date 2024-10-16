@@ -1,38 +1,38 @@
 {
-    "3": {
+    "10": {
         "inputs": {
-            "seed": 156680208700286,
+            "seed": 766940636763599,
             "steps": 20,
             "cfg": 8,
             "sampler_name": "euler",
             "scheduler": "normal",
             "denoise": 1,
             "model": [
-                "4",
+                "11",
                 0
             ],
             "positive": [
-                "6",
+                "13",
                 0
             ],
             "negative": [
-                "7",
+                "14",
                 0
             ],
             "latent_image": [
-                "5",
+                "12",
                 0
             ]
         },
         "class_type": "KSampler"
     },
-    "4": {
+    "11": {
         "inputs": {
-            "ckpt_name": "v1-5-pruned-emaonly.ckpt"
+            "ckpt_name": "juggernautXL_juggXIByRundiffusion.safetensors"
         },
         "class_type": "CheckpointLoaderSimple"
     },
-    "5": {
+    "12": {
         "inputs": {
             "width": 512,
             "height": 512,
@@ -40,44 +40,44 @@
         },
         "class_type": "EmptyLatentImage"
     },
-    "6": {
+    "13": {
         "inputs": {
             "text": "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,",
             "clip": [
-                "4",
+                "11",
                 1
             ]
         },
         "class_type": "CLIPTextEncode"
     },
-    "7": {
+    "14": {
         "inputs": {
-            "text": "text, watermark, nsfw",
+            "text": "text, watermark",
             "clip": [
-                "4",
+                "11",
                 1
             ]
         },
         "class_type": "CLIPTextEncode"
     },
-    "8": {
+    "15": {
         "inputs": {
             "samples": [
-                "3",
+                "10",
                 0
             ],
             "vae": [
-                "4",
+                "11",
                 2
             ]
         },
         "class_type": "VAEDecode"
     },
-    "9": {
+    "16": {
         "inputs": {
             "filename_prefix": "ComfyUI",
             "images": [
-                "8",
+                "15",
                 0
             ]
         },
