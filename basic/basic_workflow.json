@@ -1,51 +1,72 @@
 {
-    "last_node_id": 9,
-    "last_link_id": 9,
+    "last_node_id": 22,
+    "last_link_id": 24,
     "nodes": [
         {
-            "id": 6,
-            "type": "CLIPTextEncode",
+            "id": 10,
+            "type": "KSampler",
             "pos": [
-                415,
-                186
+                1586.9149157825411,
+                542.4579216217965
             ],
             "size": {
-                "0": 422.84503173828125,
-                "1": 164.31304931640625
+                "0": 315,
+                "1": 262
             },
             "flags": {},
-            "order": 2,
+            "order": 4,
             "mode": 0,
             "inputs": [
                 {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 3
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 10
+                },
+                {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 11
+                },
+                {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 12
+                },
+                {
+                    "name": "latent_image",
+                    "type": "LATENT",
+                    "link": 13
                 }
             ],
             "outputs": [
                 {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
+                    "name": "LATENT",
+                    "type": "LATENT",
                     "links": [
-                        4
+                        16
                     ],
                     "slot_index": 0
                 }
             ],
             "properties": {
-                "Node name for S&R": "CLIPTextEncode"
+                "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,"
+                766940636763599,
+                "randomize",
+                20,
+                8,
+                "euler",
+                "normal",
+                1
             ]
         },
         {
-            "id": 5,
+            "id": 12,
             "type": "EmptyLatentImage",
             "pos": [
-                473,
-                609
+                1196.9149157825411,
+                965.4579216217965
             ],
             "size": {
                 "0": 315,
@@ -59,7 +80,7 @@
                     "name": "LATENT",
                     "type": "LATENT",
                     "links": [
-                        2
+                        13
                     ],
                     "slot_index": 0
                 }
@@ -74,70 +95,87 @@
             ]
         },
         {
-            "id": 3,
-            "type": "KSampler",
+            "id": 13,
+            "type": "CLIPTextEncode",
             "pos": [
-                863,
-                186
+                1138.9149157825411,
+                542.4579216217965
             ],
             "size": {
-                "0": 315,
-                "1": 262
+                "0": 422.84503173828125,
+                "1": 164.31304931640625
             },
             "flags": {},
-            "order": 4,
+            "order": 2,
             "mode": 0,
             "inputs": [
                 {
-                    "name": "model",
-                    "type": "MODEL",
-                    "link": 1
-                },
-                {
-                    "name": "positive",
-                    "type": "CONDITIONING",
-                    "link": 4
-                },
-                {
-                    "name": "negative",
-                    "type": "CONDITIONING",
-                    "link": 6
-                },
-                {
-                    "name": "latent_image",
-                    "type": "LATENT",
-                    "link": 2
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 14
                 }
             ],
             "outputs": [
                 {
-                    "name": "LATENT",
-                    "type": "LATENT",
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
                     "links": [
-                        7
+                        11
                     ],
                     "slot_index": 0
                 }
             ],
             "properties": {
-                "Node name for S&R": "KSampler"
+                "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                156680208700286,
-                "randomize",
-                20,
-                8,
-                "euler",
-                "normal",
-                1
+                "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,"
             ]
         },
         {
-            "id": 8,
+            "id": 14,
+            "type": "CLIPTextEncode",
+            "pos": [
+                1136.9149157825411,
+                745.4579216217965
+            ],
+            "size": {
+                "0": 425.27801513671875,
+                "1": 180.6060791015625
+            },
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 15
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        12
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+                "text, watermark"
+            ]
+        },
+        {
+            "id": 15,
             "type": "VAEDecode",
             "pos": [
-                1209,
-                188
+                1932.9149157825411,
+                544.4579216217965
             ],
             "size": {
                 "0": 210,
@@ -150,12 +188,12 @@
                 {
                     "name": "samples",
                     "type": "LATENT",
-                    "link": 7
+                    "link": 16
                 },
                 {
                     "name": "vae",
                     "type": "VAE",
-                    "link": 8
+                    "link": 17
                 }
             ],
             "outputs": [
@@ -163,7 +201,7 @@
                     "name": "IMAGE",
                     "type": "IMAGE",
                     "links": [
-                        9
+                        18
                     ],
                     "slot_index": 0
                 }
@@ -173,11 +211,11 @@
             }
         },
         {
-            "id": 9,
+            "id": 16,
             "type": "SaveImage",
             "pos": [
-                1451,
-                189
+                2174.9149157825414,
+                545.4579216217965
             ],
             "size": {
                 "0": 210,
@@ -190,7 +228,7 @@
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 9
+                    "link": 18
                 }
             ],
             "properties": {},
@@ -199,11 +237,11 @@
             ]
         },
         {
-            "id": 4,
+            "id": 11,
             "type": "CheckpointLoaderSimple",
             "pos": [
-                26,
-                474
+                749.9149157825411,
+                830.4579216217965
             ],
             "size": {
                 "0": 315,
@@ -217,7 +255,7 @@
                     "name": "MODEL",
                     "type": "MODEL",
                     "links": [
-                        1
+                        10
                     ],
                     "slot_index": 0
                 },
@@ -225,8 +263,8 @@
                     "name": "CLIP",
                     "type": "CLIP",
                     "links": [
-                        3,
-                        5
+                        14,
+                        15
                     ],
                     "slot_index": 1
                 },
@@ -234,7 +272,7 @@
                     "name": "VAE",
                     "type": "VAE",
                     "links": [
-                        8
+                        17
                     ],
                     "slot_index": 2
                 }
@@ -243,118 +281,80 @@
                 "Node name for S&R": "CheckpointLoaderSimple"
             },
             "widgets_values": [
-                "v1-5-pruned-emaonly.ckpt"
-            ]
-        },
-        {
-            "id": 7,
-            "type": "CLIPTextEncode",
-            "pos": [
-                413,
-                389
-            ],
-            "size": {
-                "0": 425.27801513671875,
-                "1": 180.6060791015625
-            },
-            "flags": {},
-            "order": 3,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 5
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
-                    "links": [
-                        6
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CLIPTextEncode"
-            },
-            "widgets_values": [
-                "text, watermark, nsfw"
+                "juggernautXL_juggXIByRundiffusion.safetensors"
             ]
         }
     ],
     "links": [
         [
-            1,
-            4,
+            10,
+            11,
             0,
-            3,
+            10,
             0,
             "MODEL"
         ],
         [
-            2,
-            5,
+            11,
+            13,
             0,
-            3,
-            3,
-            "LATENT"
-        ],
-        [
-            3,
-            4,
-            1,
-            6,
-            0,
-            "CLIP"
-        ],
-        [
-            4,
-            6,
-            0,
-            3,
+            10,
             1,
             "CONDITIONING"
         ],
         [
-            5,
-            4,
-            1,
-            7,
+            12,
+            14,
             0,
-            "CLIP"
-        ],
-        [
-            6,
-            7,
-            0,
-            3,
+            10,
             2,
             "CONDITIONING"
         ],
         [
-            7,
-            3,
+            13,
+            12,
             0,
-            8,
+            10,
+            3,
+            "LATENT"
+        ],
+        [
+            14,
+            11,
+            1,
+            13,
+            0,
+            "CLIP"
+        ],
+        [
+            15,
+            11,
+            1,
+            14,
+            0,
+            "CLIP"
+        ],
+        [
+            16,
+            10,
+            0,
+            15,
             0,
             "LATENT"
         ],
         [
-            8,
-            4,
+            17,
+            11,
             2,
-            8,
+            15,
             1,
             "VAE"
         ],
         [
-            9,
-            8,
+            18,
+            15,
             0,
-            9,
+            16,
             0,
             "IMAGE"
         ]
@@ -363,10 +363,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1,
+            "scale": 0.5131581182307067,
             "offset": [
-                0,
-                0
+                -114.35848428759383,
+                -73.67187885955121
             ]
         }
     },
