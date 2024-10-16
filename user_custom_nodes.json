@@ -1,3 +1,13 @@
-
-[]
-      
+[
+  {
+    "url": "https://github.com/w3rc/comfy-llm-nodes",
+    "name": "comfy-llm-nodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {},
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
+  }
+]
