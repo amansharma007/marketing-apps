@@ -133,44 +133,6 @@
             ]
         },
         {
-            "id": 14,
-            "type": "CLIPTextEncode",
-            "pos": [
-                1136.9149157825411,
-                745.4579216217965
-            ],
-            "size": {
-                "0": 425.27801513671875,
-                "1": 180.6060791015625
-            },
-            "flags": {},
-            "order": 3,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 15
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
-                    "links": [
-                        12
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CLIPTextEncode"
-            },
-            "widgets_values": [
-                "text, watermark"
-            ]
-        },
-        {
             "id": 15,
             "type": "VAEDecode",
             "pos": [
@@ -281,7 +243,45 @@
                 "Node name for S&R": "CheckpointLoaderSimple"
             },
             "widgets_values": [
-                "juggernautXL_juggXIByRundiffusion.safetensors"
+                "epicrealism_naturalSinRC1VAE.safetensors"
+            ]
+        },
+        {
+            "id": 14,
+            "type": "CLIPTextEncode",
+            "pos": [
+                1136.9149157825411,
+                745.4579216217965
+            ],
+            "size": {
+                "0": 425.27801513671875,
+                "1": 180.6060791015625
+            },
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 15
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        12
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+                "text, watermark, nsfw"
             ]
         }
     ],
@@ -363,10 +363,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5131581182307067,
+            "scale": 1.3310000000000004,
             "offset": [
-                -114.35848428759383,
-                -73.67187885955121
+                -908.0616996733188,
+                -514.9856028319786
             ]
         }
     },
