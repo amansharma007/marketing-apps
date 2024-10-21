@@ -28,7 +28,7 @@
     },
     "11": {
         "inputs": {
-            "ckpt_name": "juggernautXL_juggXIByRundiffusion.safetensors"
+            "ckpt_name": "epicrealism_naturalSinRC1VAE.safetensors"
         },
         "class_type": "CheckpointLoaderSimple"
     },
@@ -52,7 +52,7 @@
     },
     "14": {
         "inputs": {
-            "text": "text, watermark",
+            "text": "text, watermark, nsfw",
             "clip": [
                 "11",
                 1
