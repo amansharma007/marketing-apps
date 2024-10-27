@@ -42,6 +42,10 @@ workflows:
       - label: Output Image
         demo_type: image
     skip_preprocess: true
+  - id: mglr4leqcg
+    name: basic_workflow.json
+    description: ''
+    file: basic/basic_workflow.json
 normal_workflows:
   - id: fx69911958l
     name: basic_workflow.json
