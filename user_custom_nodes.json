@@ -65,17 +65,5 @@
     ],
     "apt": [],
     "cached": "False"
-  },
-  {
-    "url": "https://github.com/w3rc/comfy-llm-nodes",
-    "name": "comfy-llm-nodes",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {},
-    "nodes": [],
-    "pip": [],
-    "apt": [],
-    "sha": "f784eb90e8942d8591935b762e18d33c71773acb",
-    "cached": "False"
   }
 ]
