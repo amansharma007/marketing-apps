@@ -4,63 +4,16 @@ custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows:
-  - id: s117jl58iza
-    name: test_workflow_api.json
-    file: llm_workflows/test_workflow_api.json
-    version: 18
-    description: ''
-    inputs:
-      - path: 16.inputs.filename_prefix
-        label: filename_prefix
-        parameter_name: filename_prefix_75437
-        type: string
-        demo_type: text
-        category: output
-        randomize: true
-      - path: 13.inputs.text
-        label: Positive Prompt
-        parameter_name: text_38061
-        type: string
-        demo_type: text
-        category: input
-        randomize: false
-      - path: 10.inputs.steps
-        label: Sampling Steps
-        parameter_name: steps_57356
-        type: integer
-        demo_type: number
-        category: input
-        randomize: false
-      - path: 10.inputs.cfg
-        label: CFG Scale
-        parameter_name: cfg_62355
-        type: integer
-        demo_type: number
-        category: input
-        randomize: false
-    outputs:
-      - label: Output Image
-        demo_type: image
-    skip_preprocess: true
-  - id: mglr4leqcg
-    name: test_workflow.json
-    description: ''
-    file: llm_workflows/test_workflow.json
-    version: .nan
   - id: cwcfm3vowyb
     name: basic_workflow_api.json
     file: basic/basic_workflow_api.json
-    version: .nan
+    version: 1
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
 normal_workflows:
-  - id: fx69911958l
-    name: test_workflow.json
-    file: llm_workflows/test_workflow.json
-    version: 18
   - id: tmwant890ca
     name: basic_workflow.json
     file: basic/basic_workflow.json
-    version: .nan
+    version: 1
