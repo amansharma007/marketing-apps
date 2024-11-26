@@ -47,8 +47,20 @@ workflows:
     description: ''
     file: llm_workflows/test_workflow.json
     version: .nan
+  - id: cwcfm3vowyb
+    name: basic_workflow_api.json
+    file: basic/basic_workflow_api.json
+    version: .nan
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: fx69911958l
     name: test_workflow.json
     file: llm_workflows/test_workflow.json
     version: 18
+  - id: tmwant890ca
+    name: basic_workflow.json
+    file: basic/basic_workflow.json
+    version: .nan
