@@ -5,9 +5,9 @@ user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows:
   - id: s117jl58iza
-    name: basic_workflow_api.json
-    file: basic/basic_workflow_api.json
-    version: 17
+    name: test_workflow_api.json
+    file: basic/test_workflow_api.json
+    version: 18
     description: ''
     inputs:
       - path: 16.inputs.filename_prefix
@@ -43,11 +43,12 @@ workflows:
         demo_type: image
     skip_preprocess: true
   - id: mglr4leqcg
-    name: basic_workflow.json
+    name: test_workflow.json
     description: ''
-    file: basic/basic_workflow.json
+    file: basic/test_workflow.json
+    version: .nan
 normal_workflows:
   - id: fx69911958l
-    name: basic_workflow.json
-    file: basic/basic_workflow.json
-    version: 17
+    name: test_workflow.json
+    file: basic/test_workflow.json
+    version: 18
