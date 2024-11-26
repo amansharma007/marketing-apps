@@ -6,7 +6,7 @@ user_custom_nodes: user_custom_nodes.json
 workflows:
   - id: s117jl58iza
     name: test_workflow_api.json
-    file: basic/test_workflow_api.json
+    file: llm_workflows/test_workflow_api.json
     version: 18
     description: ''
     inputs:
@@ -45,10 +45,10 @@ workflows:
   - id: mglr4leqcg
     name: test_workflow.json
     description: ''
-    file: basic/test_workflow.json
+    file: llm_workflows/test_workflow.json
     version: .nan
 normal_workflows:
   - id: fx69911958l
     name: test_workflow.json
-    file: basic/test_workflow.json
+    file: llm_workflows/test_workflow.json
     version: 18
