@@ -6,7 +6,7 @@ user_custom_nodes: user_custom_nodes.json
 workflows:
   - id: cwcfm3vowyb
     name: basic_workflow_api.json
-    file: basic/basic_workflow_api.json
+    file: llm_workflows/basic_workflow_api.json
     version: 1
     description: ''
     inputs: []
@@ -15,5 +15,5 @@ workflows:
 normal_workflows:
   - id: tmwant890ca
     name: basic_workflow.json
-    file: basic/basic_workflow.json
+    file: llm_workflows/basic_workflow.json
     version: 1
