@@ -28,7 +28,7 @@
     },
     "11": {
         "inputs": {
-            "ckpt_name": "v1-5-pruned-emaonly.ckpt"
+            "ckpt_name": "epicrealism_naturalSinRC1VAE.safetensors"
         },
         "class_type": "CheckpointLoaderSimple"
     },
@@ -99,7 +99,7 @@
                 "20",
                 0
             ],
-            "text2": " 💡 Introducing IC Light: the game-changing project for image manipulation! 🌟\n\n🔍 Say goodbye to dull, poorly lit images and hello to vibrant, realistic illumination. IC Light can automatically extract the foreground of an image and generate a stunning new image based on your prompt and directional light preferences. 💡📸\n\n🌍 Ready to level up your image editing skills? IC Light is now available on Hugging Face and GitHub, with three powerful models to choose from. Our top recommendation: the FC IC Light UNCORE SD15 UNCORE FC.safe tensors model, which delivers unparalleled performance. 🚀\n\n🔧 Dive in, explore the possibilities, and start creating your own visually stunning masterpieces today! 🎨✨\n\n👉 Check it out now on Hugging Face: <https://huggingface.co/spaces/nateraw/IC-Light>\n👉 Or GitHub: <https://github.com/nateraw/IC-Light>\n\n#ICLight #ImageManipulation #AI #Photography #Design #Innovation #LinkedInCreators"
+            "text2": " ð¡ Introducing IC Light: the game-changing project for image manipulation! ð\n\nð Say goodbye to dull, poorly lit images and hello to vibrant, realistic illumination. IC Light can automatically extract the foreground of an image and generate a stunning new image based on your prompt and directional light preferences. ð¡ð¸\n\nð Ready to level up your image editing skills? IC Light is now available on Hugging Face and GitHub, with three powerful models to choose from. Our top recommendation: the FC IC Light UNCORE SD15 UNCORE FC.safe tensors model, which delivers unparalleled performance. ð\n\nð§ Dive in, explore the possibilities, and start creating your own visually stunning masterpieces today! ð¨â¨\n\nð Check it out now on Hugging Face: <https://huggingface.co/spaces/nateraw/IC-Light>\nð Or GitHub: <https://github.com/nateraw/IC-Light>\n\n#ICLight #ImageManipulation #AI #Photography #Design #Innovation #LinkedInCreators"
         },
         "class_type": "ShowText|pysssss"
     },
