@@ -12,6 +12,10 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: 5d8jc13x6os
+    name: crappy_dummy_workflow.json
+    description: ''
+    file: llm_workflows/crappy_dummy_workflow.json
 normal_workflows:
   - id: tmwant890ca
     name: crappy_dummy_workflow.json
